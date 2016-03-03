@@ -17,3 +17,7 @@ function hello(){
 }
 
 module.exports = {"hello": hello};
+
+$('#submit').on('click', function(event){
+  $(document).trigger('create:post', [{title: "Cool", body: "Cool"}]);
+})
